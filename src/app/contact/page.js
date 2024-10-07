@@ -12,7 +12,7 @@ export default function Contact() {
       </Head>
       <div className="flex flex-col min-h-screen">
         <Header />
-        <main className="flex-1 flex flex-col items-center justify-center p-4">
+        <main className="flex-1 flex flex-col items-center justify-center p-4 bg-white text-black">
           <h1 className="text-4xl font-bold mb-4">Contact information</h1>
           <h1>We are here to help you every step of the way. Whether you have questions about our services or would like to schedule a consultation, our friendly team is available to assist you.
           </h1>

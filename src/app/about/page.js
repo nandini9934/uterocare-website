@@ -11,7 +11,7 @@ export default function About() {
       </Head>
       <div className="flex flex-col min-h-screen">
         <Header />
-        <main className="flex-1 flex flex-col items-center justify-center p-4">
+        <main className="flex-1 flex flex-col items-center justify-center p-4 bg-white text-black">
           <h1 className="text-4xl font-bold mb-4">About Us</h1>
           <p className="max-w-2xl text-center">
             At UteroCare, we believe that every fertility journey is unique and deserves personalized care. Our mission is to provide individuals and couples with comprehensive solutions to infertility, combining the latest in medical technology with holistic, compassionate support.
