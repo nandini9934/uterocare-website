@@ -11,7 +11,7 @@ export default function Services() {
       </Head>
       <div className="flex flex-col min-h-screen">
         <Header />
-        <main className="flex-1 flex flex-col justify-center p-4">
+        <main className="flex-1 flex flex-col justify-center p-4 bg-white">
           <h1 className="text-4xl font-bold mb-4 text-center">Our Fertility Services</h1>
           <p className="font-bold text-xl ">
             UteroCare offers a wide range of fertility services, customized to meet the unique needs of each patient. Our team of fertility experts uses advanced reproductive technologies and individualized treatment plans to provide you with the best possible chances of success.
