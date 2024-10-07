@@ -19,7 +19,7 @@ export default function Services() {
           <ol className="font-medium space-y-3">
             <li><h5 className='font-bold'>1. Fertility Consultations:</h5> Our fertility consultations are designed to understand your medical history, evaluate your fertility health, and develop a personalized treatment plan. We believe in providing detailed information and helping you make informed decisions about your reproductive health.
             </li>
-            <li><h5 className='font-bold'>2. In-Vitro Fertilization (IVF):</h5> IVF is one of the most advanced and effective fertility treatments available. Our state-of-the-art IVF lab uses cutting-edge technology to maximize the chances of conception. Whether you're dealing with unexplained infertility, age-related issues, or other medical conditions, IVF can offer a solution.
+            <li><h5 className='font-bold'>2. In-Vitro Fertilization (IVF):</h5> IVF is one of the most advanced and effective fertility treatments available. Our state-of-the-art IVF lab uses cutting-edge technology to maximize the chances of conception. Whether you are dealing with unexplained infertility, age-related issues, or other medical conditions, IVF can offer a solution.
             </li>
             <li><h5 className='font-bold'>3. Intrauterine Insemination (IUI):</h5> IUI is a less invasive fertility treatment that involves placing sperm directly into the uterus. It can be a first-line treatment for couples experiencing difficulty conceiving due to mild fertility challenges.
             </li>
