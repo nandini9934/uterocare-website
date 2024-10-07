@@ -3,7 +3,7 @@ import Button from './Button';
 
 export default function BlogSection() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center text-center bg-uteropink">
+    <section className="min-h-screen px-10 flex flex-col items-center justify-center text-center bg-uteropink">
       <h1 className="text-pink-700  text-4xl font-bold mb-8">
       Fertility Insights from UteroCare
       </h1>
