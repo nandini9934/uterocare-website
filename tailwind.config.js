@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        uteropink: 'rgb(234 181 207)',
+        uteropink: 'rgb(255 234 244)',
       },
     },
   },
