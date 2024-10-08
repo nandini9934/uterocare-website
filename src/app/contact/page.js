@@ -1,30 +1,83 @@
-// pages/contact.js
-import Head from 'next/head';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+// app/contact-us/page.js
+"use client";
+import React, { useState } from 'react';
+import Navbar from '../_sections/navbar';
+import axios from "axios";
 
-export default function Contact() {
+
+const ContactUs = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      axios
+        .post("/api/contactus", {
+          name, email, message
+        })
+        .then(function (response) {
+          console.log(response);
+          alert("Request send successfully.");
+        })
+        .catch(function (error) {
+          console.log(error.message);
+          alert(error.message);
+        });
+    } catch (error) {
+      console.error("Error during form submission", error);
+      alert("Form submission failed. Please try again later.");
+    }
+  };
+
+
   return (
     <>
-      <Head>
-        <title>Get in Touch with UteroCare
-        </title>
-      </Head>
-      <div className="flex flex-col min-h-screen">
-        <Header />
-        <main className="flex-1 flex flex-col items-center justify-center p-4 bg-white text-black">
-          <h1 className="text-4xl font-bold mb-4">Contact information</h1>
-          <h1>We are here to help you every step of the way. Whether you have questions about our services or would like to schedule a consultation, our friendly team is available to assist you.
-          </h1>
-          <p className="max-w-2xl text-center">
-            Phone: +91-XXXXXXXXXX<br/>
-            Email: support@uterocare.com<br/>
-            Address: 64 Rajendra Nagar Naubasta, Kanpur 208021
-          </p>
-          Submit your inquiry, and one of our fertility specialists will get back to you shortly.
-        </main>
-        <Footer />
+      <Navbar />
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-4xl font-bold mb-6 text-center text-pink-700">Contact Us</h1>
+
+        <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
+          <div className="mb-4">
+            <label className="block text-lg font-medium mb-2 text-pink-500">Name</label>
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="w-full px-4 py-2 border rounded-lg"
+              required
+            />
+          </div>
+
+          <div className="mb-4">
+            <label className="block text-lg font-medium mb-2 text-pink-500">Email</label>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full px-4 py-2 border rounded-lg"
+              required
+            />
+          </div>
+
+          <div className="mb-4">
+            <label className="block text-lg font-medium mb-2 text-pink-500">Message</label>
+            <textarea
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              className="w-full px-4 py-2 border rounded-lg"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" className="w-full bg-pink -500 text-white font-bold py-2 px-4 rounded-lg" onClick={handleSubmit}>Submit</button>
+        </form>
       </div>
     </>
   );
 }
+
+export default ContactUs;

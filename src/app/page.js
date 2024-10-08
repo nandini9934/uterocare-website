@@ -1,25 +1,38 @@
 // pages/index.js
 import Head from 'next/head';
-import Header from './components/Header';
-import HeroSection from './components/Herosection';
-import Footer from './components/Footer';
-import SuccessStories from './components/SuccessStories';
-import BlogSection from './components/Blogsection';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import Header from './_sections/header';
+import Footer from './_sections/footer';
+import Navbar from './_sections/navbar';
+import Services from './_sections/services';
+import Testimonial from './_sections/testimonial';
+import Health from './_sections/health';
+import AboutUs from './_sections/about';
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>UteroCare - Infertility Solutions</title>
-      </Head>
+        <div className="grid grid-cols-1 divide-y divide-stone-300" >
+          {/* Navbar section*/}
+          <Navbar/> 
+          {/* Header Section */}
+          
+          <Header/>
 
-      <div className="flex flex-col min-h-screen">
-        <Header />
-        <HeroSection />
-        <SuccessStories/>
-        <BlogSection/>
-        <Footer />
-      </div>
+          {/* About Section */}
+          <AboutUs/>
+        </div >
+        {/* Services Section */}
+        <Services/>
+
+        {/*Health Section*/}
+       <Health/>
+
+        {/*Testimonial section*/}
+       <Testimonial/>
+
+        {/*Footer Section */}
+        <Footer/>
     </>
   );
 }

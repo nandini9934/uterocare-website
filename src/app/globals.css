@@ -1,27 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Oswald:wght@200..700&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body{
+ background-color: rgb(255 234 244);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.inputgroup input::placeholder{
+  color: black;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.btn{
+  margin-left: 17%;
+  font-weight: 600;
+  color: white;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.sticky-navbar{
+  position: fixed;
+  top: 0;
+}
+
+.active{
+  /* color: rgb(55 65 81); */
+  font-weight: bold;
+}
+
+.card, .card1{
+  position: static;
 }
