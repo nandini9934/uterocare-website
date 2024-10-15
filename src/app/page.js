@@ -12,27 +12,28 @@ import AboutUs from './_sections/about';
 export default function Home() {
   return (
     <>
-        <div className="grid grid-cols-1 divide-y divide-stone-300" >
-          {/* Navbar section*/}
-          <Navbar/> 
-          {/* Header Section */}
-          
-          <Header/>
+      <div className="grid grid-cols-1 divide-y divide-stone-300" >
+        {/* Navbar section*/}
+        <Navbar />
+        {/* Header Section */}
 
-          {/* About Section */}
-          <AboutUs/>
-        </div >
+        <Header />
+
+        {/* About Section */}
+        <AboutUs />
+
         {/* Services Section */}
-        <Services/>
+        <Services />
 
         {/*Health Section*/}
-       <Health/>
+        <Health />
 
         {/*Testimonial section*/}
-       <Testimonial/>
+        <Testimonial />
 
         {/*Footer Section */}
-        <Footer/>
+        <Footer />
+      </div >
     </>
   );
 }
