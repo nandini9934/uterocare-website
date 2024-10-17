@@ -6,12 +6,12 @@ import axios from "axios";
 
 
 const ContactUs = () => {
-const [name, setName] = useState('');
-const [age, setAge] = useState('');
-const [phone, setPhone] = useState('');
-const [disease, setDisease] = useState('');
-const [description, setDescription] = useState('');
-const [disabled,setDisabled]=useState(false);
+  const [name, setName] = useState('');
+  const [age, setAge] = useState('');
+  const [phone, setPhone] = useState('');
+  const [disease, setDisease] = useState('');
+  const [description, setDescription] = useState('');
+  const [disabled, setDisabled] = useState(false);
 
   const handleSubmit = async (e) => {
     setDisabled(true);
@@ -94,14 +94,25 @@ const [disabled,setDisabled]=useState(false);
           {/* Disease */}
           <div className="mb-4">
             <label className="block text-lg font-medium mb-2 text-pink-500">Disease</label>
-            <input
+            <select
               type="text"
               value={disease}
               onChange={(e) => setDisease(e.target.value)}
               className="w-full px-4 py-2 border rounded-lg"
               required
-            />
+            >
+              <option value="">Select a type</option>
+              <option value="Polycystic Ovary Syndrome (PCOS)">Polycystic Ovary Syndrome (PCOS)</option>
+              <option value="Ovarian Cysts">Ovarian Cysts</option>
+              <option value="Polycystic ovary desease (PCOD)">Polycystic ovary desease (PCOD)</option>
+              <option value="Ovarian cancer">Ovarian cancer</option>
+              <option value="Endometriosis">Endometriosis</option>
+              <option value="Infertility">Infertility</option>
+              <option value="Others">Others</option>
+            </select>
           </div>
+
+
 
           {/* Description */}
           <div className="mb-4">
@@ -116,7 +127,7 @@ const [disabled,setDisabled]=useState(false);
           </div>
 
           {/* Submit Button */}
-          <button disabled={disabled} type="submit" className={`w-full ${disabled ? "bg-pink-300" : "bg-pink-500"} text-white font-bold py-2 px-4 rounded-lg`} onClick={handleSubmit}>
+          <button disabled={disabled} type="submit" className={`w-full ${disabled ? "bg-pink-300" : "bg-pink-500"} text-white font-bold py-2 px-4 mb-10 rounded-lg`} onClick={handleSubmit}>
             Submit
           </button>
 

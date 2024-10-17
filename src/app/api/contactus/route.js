@@ -28,7 +28,7 @@ export async function POST(req) {
         // Email options
         const mailOptions = {
             from: process.env.EMAIL_USER, // Sender address
-            to: 'kushwahaakash2000@gmail.com', // Recipient address
+            to: 'Rahularyan34@gmail.com', // Recipient address
             subject: 'New User Registration',
             text: `New inquiry arrived:\n\nName: ${name}\nAge: ${age}\nPhone: ${phone}\nDisease: ${disease}\nDescription: ${description}`,
         };
