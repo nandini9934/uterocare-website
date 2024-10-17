@@ -98,7 +98,7 @@ const ContactUs = () => {
               type="text"
               value={disease}
               onChange={(e) => setDisease(e.target.value)}
-              className="w-full px-4 py-2 border rounded-lg bg-white"
+              className="w-full px-4 lg:py-2 py-3 border rounded-lg bg-white"
               required
             >
               <option value="">Select a type</option>
