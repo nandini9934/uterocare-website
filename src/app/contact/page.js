@@ -109,6 +109,14 @@ const ContactUs = () => {
               <option value="Leucorrhoea">Leucorrhoea</option>
               <option value="Hormonal Disorder">Hormonal Disorder</option>
               <option value="Cervicitis">Cervicitis</option>
+              <option value="              Polycystic Ovary Syndrome (PCOS)
+">              Polycystic Ovary Syndrome (PCOS)
+              </option>
+              <option value="Ovarian Cysts">Ovarian Cysts</option>
+              <option value="Polycystic ovary desease (PCOD)">Polycystic ovary desease (PCOD)</option>
+              <option value="Ovarian cancer">Ovarian cancer</option>
+              <option value="Endometriosis">Endometriosis</option>
+              <option value="Infertility">Infertility</option>
               <option value="Others">Others</option>
             </select>
           </div>
