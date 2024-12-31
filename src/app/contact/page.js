@@ -102,21 +102,23 @@ const ContactUs = () => {
               required
             >
               <option value="">Select a type</option>
-              <option value="Tube Blokage">Tube Blokage</option>
-              <option value="Urine Infection">Urine Infection</option>
-              <option value="UTI">UTI</option>
-              <option value="PID">PID</option>
-              <option value="Leucorrhoea">Leucorrhoea</option>
-              <option value="Hormonal Disorder">Hormonal Disorder</option>
-              <option value="Cervicitis">Cervicitis</option>
-              <option value="              Polycystic Ovary Syndrome (PCOS)
-">              Polycystic Ovary Syndrome (PCOS)
-              </option>
-              <option value="Ovarian Cysts">Ovarian Cysts</option>
-              <option value="Polycystic ovary desease (PCOD)">Polycystic ovary desease (PCOD)</option>
-              <option value="Ovarian cancer">Ovarian cancer</option>
-              <option value="Endometriosis">Endometriosis</option>
-              <option value="Infertility">Infertility</option>
+              <option value="Infertility / Childlessness">Infertility / Childlessness (for both women and men)</option>
+              <option value="Uterine Fibroids">Treatment for uterine (womb) fibroids</option>
+              <option value="Ovarian Problems">Ovarian problems</option>
+              <option value="Contraceptive Advice">Contraceptive advice</option>
+              <option value="PCOD / PCOS">Treatment for PCOD / PCOS (Polycystic Ovarian Disease/Syndrome)</option>
+              <option value="Leucorrhoea">Treatment for leucorrhoea (white discharge)</option>
+              <option value="Menstrual Problems">Problems related to menstruation and monthly cycles (Menstrual Bleeding)</option>
+              <option value="Menopause Issues">Treatment for Menopause-related issues (problems due to cessation of menstruation)</option>
+              <option value="Breast Lumps, Tumors, and Cancer">Treatment for breast lumps, tumors, and cancer</option>
+              <option value="Uterine Prolapse">Treatment for uterine prolapse (womb falling out)</option>
+              <option value="Male Impotence">Impotence</option>
+              <option value="Premature Ejaculation">Premature ejaculation</option>
+              <option value="Weakness or Lack of Rigidity">Weakness or lack of rigidity</option>
+              <option value="Nocturnal Emissions">Nocturnal emissions (nightfall)</option>
+              <option value="Semen Issues (Dhatu Rog)">Semen-related issues (Dhatu Rog)</option>
+              <option value="Childless Couples">Childless couples</option>
+              <option value="Low Sperm Count">Low sperm count</option>
               <option value="Others">Others</option>
             </select>
           </div>

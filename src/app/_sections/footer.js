@@ -11,7 +11,7 @@ export default function Footer() {
           </div>
           <div className="absolute bottom-0 w-full bg-pink-400 h-[100px] rounded-t-full">
             <div className="absolute bottom-4 w-full flex justify-center">
-              <p className="text-sm text-white font-bold">©2024 Good Gut Project. All Rights Reserved.</p>
+              <p className="text-sm text-white font-bold">©2024 Uterocare. All Rights Reserved.</p>
             </div>
           </div>
         </div>

@@ -15,7 +15,7 @@ export default function Navbar() {
     <div className='lg:bg-pink-400'>
       <section className="container mx-auto">
         <nav className="bg-peach relative py-4 px-5">
-          <div className="flex items-center text-xl justify-between lg:grid lg:grid-cols-12 ">
+          <div className="flex items-center text-xl justify-between lg:grid lg:grid-cols-9 ">
             {/* Logo */}
             <div className='col-span-1'>
               <img src="/logo.png" height={100} width={100} alt="Logo" />
@@ -52,7 +52,7 @@ export default function Navbar() {
                 Team
               </Link>
 
-              <Link
+              {/* <Link
                 href="/contact"
                 className={`block text-white font-bold mb-2 ${pathname === '/contact'
                     ? 'active'
@@ -60,7 +60,7 @@ export default function Navbar() {
                   }`}
               >
                 Contact
-              </Link>
+              </Link> */}
               <Link
                 href="/privacy-policy"
                 className={`block text-white font-bold mb-2 ${pathname === '/privacy-policy'
@@ -133,7 +133,7 @@ export default function Navbar() {
               Team
             </Link>
 
-            <Link
+            {/* <Link
               href="/contact"
               className={`block text-pink-500 font-bold mb-2 ${pathname === '/contact'
                   ? 'active'
@@ -141,7 +141,7 @@ export default function Navbar() {
                 }`}
             >
               Contact
-            </Link>
+            </Link> */}
             <Link
               href="/privacy-policy"
               className={`block text-pink-500 font-bold mb-2 ${pathname === '/privacy-policy'
