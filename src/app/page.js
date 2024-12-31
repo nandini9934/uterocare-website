@@ -8,6 +8,7 @@ import Services from './_sections/services';
 import Testimonial from './_sections/testimonial';
 import Health from './_sections/health';
 import AboutUs from './_sections/about';
+import Form from './_sections/form';
 
 export default function Home() {
   return (
@@ -37,29 +38,32 @@ export default function Home() {
         <link rel="canonical" href="https://www.uterocare.com" />
 
         {/* Structured Data */}
-        </Head>
-        <div className="grid grid-cols-1 divide-y divide-stone-300" >
-          {/* Navbar section*/}
-          <Navbar />
-          {/* Header Section */}
+      </Head>
+      <div className="grid grid-cols-1 divide-y divide-stone-300" >
+        {/* Navbar section*/}
+        <Navbar />
+        {/* Header Section */}
 
-          <Header />
+        <Header />
 
-          {/* About Section */}
-          <AboutUs />
+        {/* About Section */}
+        <AboutUs />
 
-          {/* Services Section */}
-          <Services />
+        {/* Services Section */}
+        <Services />
 
-          {/*Health Section*/}
-          <Health />
+        {/*Health Section*/}
+        <Health />
 
-          {/*Testimonial section*/}
-          <Testimonial />
+        {/*Testimonial section*/}
+        <Testimonial />
 
-          {/*Footer Section */}
-          <Footer />
-        </div >
-      </>
-      );
+        {/*Testimonial section*/}
+        <Form/>
+
+        {/*Footer Section */}
+        <Footer />
+      </div >
+    </>
+  );
 }
