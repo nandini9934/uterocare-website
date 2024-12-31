@@ -25,4 +25,4 @@ const cuser5Schema = new mongoose.Schema({
     { timestamps: true }
 )
 
-export default mongoose.models.cuser5 || mongoose.model("cuser5", cuser5Schema);
+export default mongoose.models.cuser5 || mongoose.model("uterocare", cuser5Schema);
