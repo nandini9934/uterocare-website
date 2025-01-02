@@ -7,7 +7,7 @@ export default function Diseases() {
         <div className="mx-auto text-center">
           <h2 className="text-5xl font-medium font-serif my-20 text-pink-700">Comprehensive Treatment for Various Conditions</h2>
           <div className="px-10 lg:px-20">
-            <ul className="bg-pink-50 p-10 list-disc rounded-xl text-left text-pink-700 text-lg space-y-4">
+            <ul className="bg-pink-50  mb-20 p-10 list-disc rounded-xl text-left text-pink-700 text-lg space-y-4">
               <li className="font-medium">Infertility / Childlessness (for both women and men)</li>
               <li className="font-medium">Treatment for uterine (womb) fibroids</li>
               <li className="font-medium">Ovarian problems</li>
