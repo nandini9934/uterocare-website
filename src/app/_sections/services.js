@@ -35,7 +35,7 @@ export default function Diseases() {
       <section className="mx-auto text-center">
         <h6 id="team" className="text-pink-700 text-3xl font-bold mt-28 mb-5">Our Doctor</h6>
 
-        <div className='w-[500px] bg-peach my-10 py-3 px-15 mx-auto rounded-[0.875rem] shadow-2xl'>
+        <div className='lg:w-[500px] bg-peach my-10 py-3 px-15 mx-auto rounded-[0.875rem] shadow-2xl'>
           <img src='/uterocarepic.png' className='h-[320px] w-[320px] mx-auto py-10 px-10 rounded-full' />
           <div>
             <p className='text-2xl text-pink-700'>Dr. Menka</p>
